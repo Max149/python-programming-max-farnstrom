@@ -1,2 +1,3 @@
 # python_max_farnstrom
-jättekul kod
+## egna
+jätteroliga kod
