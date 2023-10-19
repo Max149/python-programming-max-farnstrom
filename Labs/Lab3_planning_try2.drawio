@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" modified="2023-10-19T21:15:13.184Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="0Gep1GDNfRfXldnmJkf7" version="22.0.4" type="github">
+  <diagram name="Sida-1" id="BhDxg2J7mmdgreFlhBbx">
+    <mxGraphModel dx="832" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rrIpD55j_N9txS1-euqs-1" value="class Shapes:&lt;br&gt;&lt;br&gt;def area()&lt;br&gt;def circumference()&lt;br&gt;def __repr__()&lt;br&gt;def __str__()&lt;br&gt;def translate()&lt;br&gt;def is_inside()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="10" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-4" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="190" y="240" as="sourcePoint" />
+            <mxPoint x="290" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-5" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="590" y="240" as="sourcePoint" />
+            <mxPoint x="490" y="140" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-7" value="class Rectangle&lt;br&gt;&lt;br&gt;def area()&lt;br&gt;def circumference()&lt;br&gt;def if_unit_circle()&lt;br&gt;def is_inside()&lt;br&gt;def __eq__()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="260" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-8" value="class Circle&lt;br&gt;&lt;br&gt;def area()&lt;br&gt;def circumference()&lt;br&gt;def is_square()&lt;br&gt;def is_inside()&lt;br&gt;def __eq__()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="250" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-11" value="True&lt;br&gt;False&lt;br&gt;True&lt;br&gt;False&lt;br&gt;ValueError" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="330" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="380" as="sourcePoint" />
+            <mxPoint x="280" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="380" as="sourcePoint" />
+            <mxPoint x="500" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-17" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="520" as="sourcePoint" />
+            <mxPoint x="160" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-18" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="620" y="520" as="sourcePoint" />
+            <mxPoint x="620" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-19" value="class Cube&lt;br&gt;&lt;br&gt;def area()&lt;br&gt;def circumference()&lt;br&gt;def is_inside()&lt;br&gt;def __eq__()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="530" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-20" value="class Sphere&lt;br&gt;&lt;br&gt;def area()&lt;br&gt;def circumference()&lt;br&gt;def is_inside()&lt;br&gt;def __eq__()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="540" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-21" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="655" as="sourcePoint" />
+            <mxPoint x="300" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrIpD55j_N9txS1-euqs-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="655" as="sourcePoint" />
+            <mxPoint x="470" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
