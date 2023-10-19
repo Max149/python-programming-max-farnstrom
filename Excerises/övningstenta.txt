@@ -1,0 +1,135 @@
+1. frukter = ["jordgubbe", "vindruva", "grape"] # creating a list called 'frukter' 
+2. godfrukt = frukter[2] # making a list that stores the second fruit
+3. print(godfrukt[-1]) # printing the first fruit in the list
+Skriv en kort kommentar för varje rad.
+
+
+
+Uppgift 2 (3p)
+Skriv en funktion som tar in en radie och en höjd som inparametrar och som returnerar volymen av en
+cylinder.
+Volymen för en cylinder är:
+V = πr²h
+Låt användaren mata in en radie och en höjd och kör funktionen. Tänk på att ta med lämplig felhantering.
+
+import math
+
+def Volume(self, x, y):
+
+    
+
+Uppgift 3 (3p)
+Simulera 1000000 tärningskast och beräkna antalet ettor, tvåor, treor, fyror, femmor och sexor. Spara
+resultatet i en lämplig datastruktur.
+
+import random
+
+total_rolls = 1000000
+
+def simulate_rolls(number_of_dice, n_sides_of_dice=6):
+    results = {i: 0 for i in range(number_of_dice, number_of_dice * n_sides_of_dice + 1)}
+    
+    for _ in range(total_rolls):
+        total = sum(random.choice(range(1, n_sides_of_dice + 1)) for _ in range(number_of_dice))
+        results[total] += 1
+
+    return results
+
+
+dice_results = simulate_rolls(5)
+print("Results:")
+for outcome, count in dice_results.items():
+    print(f"{outcome}: {count}")
+
+
+Uppgift 4 (3p)
+Skapa en funktion som tar in ett heltal n som parameter och skriver ut mönstret nedan.
+Exempel när n = 5:
+x x x x x
+x o x o x
+x x x x x
+x o x o x
+x x x x x
+
+def heltal(n): 
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            if i in [2, 4]:
+                print("x o x o x", end=' ')
+                break
+            else:
+                print("x", end=' ')
+        print(" ")
+
+heltal(5)
+
+
+
+Uppgift 5 (4p)
+Skapa en funktion som tar in en summa pengar.
+Den ska printa ut en representation av sedlar och mynt som representerar summan.
+Exempel 3214 ska ge:
+Tusenlapp: 3
+Tvåhundralapp: 1
+Tiokrona: 1
+Enkrona: 4
+
+number = 3214
+
+def take_money(number):
+    number = str(number)
+
+    print("Tusenlapp:", number[0])
+    print("tvåhundralapp:", number[1])
+    print("tiokrona:", number[2])
+    print("enkrona:", number[3])
+
+take_money(number)
+
+
+
+
+Uppgift 6 (4p)
+Du har följande kod:
+class Animal:
+ def __init__(self, name):
+ self.name = name
+
+ def __str__(self):
+ return f"Animal {self.name}"
+
+class Dog(Animal):
+ # notera att __init__ är nedärvd
+ def __repr__(self):
+ return f"Dog: {self.name}"
+
+class Fish(Animal):
+ def __repr__(self):
+ return f"Fish: {self.name}"
+
+# TO-DO: implementera PetOwner
+class PetOwner:
+    def __init__(self, name, *animals):
+       self.name = name
+       self.animals = list(animals)
+    
+    def add_animals(self, *animals):
+       self.animals.extend(animals)
+    
+    def __str__(self):
+      owned_animals = ", ".join(str(animal) for animal in self.animals)
+      return f"Owner: {self.name}, Animals: {owned_animals}"
+
+
+# manuell test av PetOwner
+owner1 = PetOwner("Ada",["Snoopy", "Pluto"], ["Fishy", "Buppy"])
+owner2 = PetOwner("Beda", ["Barkly"] )
+print(owner1)
+print(owner2)
+
+Implementera PetOwner klassen så att du får liknande utskrift som nedan med det manuella testet.
+Ada owns:
+[Dog: Snoopy, Dog: Pluto]
+[Fish: Fishy, Fish: Buppy]
+Beda owns:
+[Dog: Barkly]
